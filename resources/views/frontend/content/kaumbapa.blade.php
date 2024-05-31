@@ -30,7 +30,7 @@
                         <div class="post-content text-center">
                             <h2 style="color: #134A6D; font-weight: bold;">Kaum Bapa</h2>
                             <div class="post-image mb-5">
-                                <img loading="lazy" class="img-fluid w-100" src="{{ asset('assets-fe/assets/theme/images/about/j1.jpg') }}" alt="post-image">
+                                <img loading="lazy" class="img-fluid w-100" src="{{route('storage',$kaumbapa->gambar)}}" alt="post-image">
                             </div>
                             <p>Occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                                 laborum. Seper spiciatis

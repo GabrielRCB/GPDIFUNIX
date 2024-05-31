@@ -37,7 +37,7 @@
             <article class="col-lg-4 col-md-6">
                 <div class="post-item">
                     <div class="media-wrapper" style="width: 100%; height: 300px; overflow: hidden;">
-                        <img loading="lazy" src="{{ asset('assets-fe/assets/theme/images/about/j1.jpg') }}" alt="ibadah kaum ibu" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img loading="lazy" src="{{route('storage',$kaumwanita->gambar)}}" alt="ibadah kaum ibu" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
 
                     <div class="content">
@@ -55,7 +55,7 @@
             <article class="col-lg-4 col-md-6">
                 <div class="post-item">
                     <div class="media-wrapper" style="width: 100%; height: 300px; overflow: hidden;">
-                        <img loading="lazy" src="{{ asset('assets-fe/assets/theme/images/kaumbapa.jpg') }}" alt="ibadah kaum bapa" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img loading="lazy" src="{{route('storage',$kaumbapa->gambar)}}" alt="ibadah kaum bapa" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
 
                     <div class="content">

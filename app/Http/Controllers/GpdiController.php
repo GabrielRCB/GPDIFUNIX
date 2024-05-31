@@ -30,8 +30,12 @@ class GpdiController extends Controller
     }
     public function service(){
         $service = Service::first();
+        $kaumwanita = KaumWanita::first();
+        $kaumbapa = KaumBapa::first();
         return view('frontend.content.service',[
-            'service' => $service
+            'service' => $service,
+            'kaumwanita' => $kaumwanita,
+            'kaumbapa' => $kaumbapa
         ]);
     }
     public function offering(){

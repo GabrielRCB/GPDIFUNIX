@@ -405,15 +405,3 @@ Route::get('files/{filename}', function ($filename){
     $response->header("Content-Type", $type);
     return $response;
 })->name('storage');
-
-Route::get('videos/{filename}', function ($filename){
-    $path = storage_path('app/public/videos/' . $filename);
-    if (!File::exists($path)) {
-        abort(404);
-    }
-    $file = File::get($path);
-    $type = File::mimeType($path);
-    $response = Response::make($file, 200);
-    $response->header("Content-Type", $type);
-    return $response;
-})->name('video_storage');

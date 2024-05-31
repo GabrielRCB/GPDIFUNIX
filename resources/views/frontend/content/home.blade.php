@@ -23,11 +23,11 @@
 </div>
 
 <div class="hero-slider">
-    <div class="slider-item th-fullpage hero-area" style="background-color: beige">
+    <div class="slider-item th-fullpage hero-area" style="background-color: beige; background-image: url('{{route('storage',$home->gambar)}}'); background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="{{route('storage',$home->gambar)}}" alt="Image" style="max-width: 100%; height: auto;">
+                    <!-- Hapus elemen img -->
                 </div>
             </div>
         </div>

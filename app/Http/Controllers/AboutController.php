@@ -44,15 +44,15 @@ class AboutController extends Controller
         }
     }
 
-    
+
     if($request->hasFile('gambar')) {
         $gambarPath = $request->file('gambar')->store('public/images');
-        $gambarName = $request->file('gambar')->hashName(); 
+        $gambarName = $request->file('gambar')->hashName();
         // Simpan nama file gambar atau path lengkapnya, tergantung pada kebutuhan aplikasi Anda
         $about->gambar = $gambarName; // Simpan nama file gambar saja
         // $homes->gambar = $gambarPath; // Simpan path lengkap gambar
-    } 
-    
+    }
+
     try{
         $about->save();
         // Langsung menuju ke URL yang diinginkan tanpa menggunakan nama route
@@ -77,7 +77,7 @@ public function insert(Request $request)
 
     // Menyimpan gambar
     $gambarPath = $request->file('gambar')->store('public/images');
-    $namaGambar = $request->file( 'gambar' )->hashName();
+    $namaGambar = $request->file( 'gambar' )->hashName(); 
 
     $about->gambar = $namaGambar;
     $about->save();
