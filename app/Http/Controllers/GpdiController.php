@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\Home;
+use App\Models\IbadahRayon;
+use App\Models\IbadahYouth;
+use App\Models\KaumBapa;
 use App\Models\KaumWanita;
 use App\Models\Offering;
 use App\Models\PojokJemaat;
@@ -54,6 +57,30 @@ class GpdiController extends Controller
         return view('frontend.content.kaumwanita',[
             'kaumwanita' => $kaumwanita
         ]);
+    }
+    public function kaumbapa(){
+        $kaumbapa = KaumBapa::first();
+        return view('frontend.content.kaumbapa',[
+            'kaumbapa' => $kaumbapa
+        ]);
+    }
+    public function ibadahrayon(){
+        $ibadahrayon = IbadahRayon::first();
+        return view('frontend.content.ibadahrayon',[
+            'ibadahrayon' => $ibadahrayon
+        ]);
+    }
+    public function ibadahyouth(){
+        $ibadahyouth = IbadahYouth::first();
+        return view('frontend.content.ibadahyouth',[
+            'ibadahyouth' => $ibadahyouth
+        ]);
+    }
+    public function ibadahrayaminggu(){
+        return view('frontend.content.ibadahrayaminggu');
+    }
+    public function ibadahsekolahminggu(){
+        return view('frontend.content.ibadahsekolahminggu');
     }
 
 }

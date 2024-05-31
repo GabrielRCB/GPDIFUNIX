@@ -386,6 +386,11 @@ Route::prefix('Gpdi')->group(function (){
     Route::get('/schedule',[GpdiController::class,'schedule'])->name('schedule');
     Route::get('/media',[GpdiController::class,'media'])->name('media');
     Route::get('/kaumwanita',[GpdiController::class,'kaumwanita'])->name('kaumwanita');
+    Route::get('/kaumbapa',[GpdiController::class,'kaumbapa'])->name('kaumbapa');
+    Route::get('/ibadahrayon',[GpdiController::class,'ibadahrayon'])->name('ibadahrayon');
+    Route::get('/ibadahyouth',[GpdiController::class,'ibadahyouth'])->name('ibadahyouth');
+    Route::get('/ibadahrayaminggu',[GpdiController::class,'ibadahrayaminggu'])->name('ibadahrayaminggu');
+    Route::get('/ibadahsekolahminggu',[GpdiController::class,'ibadahsekolahminggu'])->name('ibadahsekolahminggu');
 });
 
 

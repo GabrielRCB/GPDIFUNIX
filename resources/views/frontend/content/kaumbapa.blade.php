@@ -12,7 +12,7 @@
                     <h2>Blog Single</h2>
                     <ol class="breadcrumb header-bradcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="{{route('service')}}" class="text-white">Service</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Kaum Wanita</li>
+                        <li class="breadcrumb-item active" aria-current="page">Kaum Bapa</li>
                     </ol>
                 </div>
             </div>
@@ -28,7 +28,7 @@
 
                         <!-- Post Content -->
                         <div class="post-content text-center">
-                            <h2 style="color: #134A6D; font-weight: bold;">Kaum Wanita</h2>
+                            <h2 style="color: #134A6D; font-weight: bold;">Kaum Bapa</h2>
                             <div class="post-image mb-5">
                                 <img loading="lazy" class="img-fluid w-100" src="{{ asset('assets-fe/assets/theme/images/about/j1.jpg') }}" alt="post-image">
                             </div>

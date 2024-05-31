@@ -550,6 +550,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
+  background-image: url("../images/home/home4.jpeg");
   background-size: cover;
   height: 100rcap;
   position: relative;
@@ -558,6 +559,7 @@ a:focus, a:hover {
   align-items: center;
 }
 .hero-area1 {
+  background-image: url("../images/home/home4.jpeg");
   background-size: cover;
   height: 30vh;
   position: relative;
