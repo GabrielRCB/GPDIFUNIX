@@ -379,6 +379,13 @@ Route::prefix('Gpdi')->group(function (){
     Route::get('/',[GpdiController::class,'index'])->name('index');
     Route::get('/about',[GpdiController::class,'about'])->name('about');
     Route::get('/service',[GpdiController::class,'service'])->name('service');
+    Route::get('/',[GpdiController::class,'index'])->name('index');
+    Route::get('/about',[GpdiController::class,'about'])->name('about');
+    Route::get('/service',[GpdiController::class,'service'])->name('service');
+    Route::get('/offering',[GpdiController::class,'offering'])->name('offering');
+    Route::get('/schedule',[GpdiController::class,'schedule'])->name('schedule');
+    Route::get('/media',[GpdiController::class,'media'])->name('media');
+    Route::get('/kaumwanita',[GpdiController::class,'kaumwanita'])->name('kaumwanita');
 });
 
 
